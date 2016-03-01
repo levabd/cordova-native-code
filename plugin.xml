@@ -12,20 +12,20 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="NativeCode">
-                <param name="android-package" value="com.native.code.wipon.NativeCode"/>
+                <param name="android-package" value="com.wipon.nativeCode.NativeCode"/>
             </feature>
         </config-file>
-        <source-file src="src/android/native_code.java" target-dir="src/com/native/code/wipon" />
+        <source-file src="src/android/NativeCode.java" target-dir="src/com/native/code/wipon" />
     </platform>
 
     <!--<platform name="ios">-->
-        <!--<config-file target="config.xml" parent="/*">-->
-            <!--<feature name="NativeCode">-->
-                <!--<param name="ios-package" value="CDVMarket"/>-->
-            <!--</feature>-->
-        <!--</config-file>-->
-        <!--<header-file src="src/ios/CDVMarket.h" />-->
-        <!--<source-file src="src/ios/CDVMarket.m" />-->
+    <!--<config-file target="config.xml" parent="/*">-->
+    <!--<feature name="NativeCode">-->
+    <!--<param name="ios-package" value="CDVMarket"/>-->
+    <!--</feature>-->
+    <!--</config-file>-->
+    <!--<header-file src="src/ios/CDVMarket.h" />-->
+    <!--<source-file src="src/ios/CDVMarket.m" />-->
     <!--</platform>-->
 
 </plugin>

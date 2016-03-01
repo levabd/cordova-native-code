@@ -1,6 +1,7 @@
-package com.native.code.wipon;
+package com.wipon.nativeCode;
 
 import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
 
@@ -13,9 +14,8 @@ import android.util.Log;
 
 public class NativeCode extends CordovaPlugin
 {
-
     @Override
-    public boolean execute(String action, JSONArray args) {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
         try {
             if (action.equals("consoleLog")) {
                 if (args.length() == 1) {
@@ -35,7 +35,7 @@ public class NativeCode extends CordovaPlugin
 
 
     private void consoleLog(String message) {
-
+        Log.d("CordovaLog", "first message");
         Log.d("CordovaLog", message);
 
     }
