@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.native.code.wipon" version="0.1">
+    <name>Native Code Wipon</name>
+    <description>Cordova Plugin for access to native functions</description>
+    <license>Wipon</license>
+    <keywords>cordova</keywords>
+    <js-module src="www/android/native_code.js" name="NativeCode">
+        <clobbers target="cordova.plugins.nativeCode" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NativeCode">
+                <param name="android-package" value="com.native.code.wipon.NativeCode"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/native_code.java" target-dir="src/com/native/code/wipon" />
+    </platform>
+
+    <!--<platform name="ios">-->
+        <!--<config-file target="config.xml" parent="/*">-->
+            <!--<feature name="NativeCode">-->
+                <!--<param name="ios-package" value="CDVMarket"/>-->
+            <!--</feature>-->
+        <!--</config-file>-->
+        <!--<header-file src="src/ios/CDVMarket.h" />-->
+        <!--<source-file src="src/ios/CDVMarket.m" />-->
+    <!--</platform>-->
+
+</plugin>
