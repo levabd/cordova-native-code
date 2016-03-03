@@ -31,9 +31,17 @@
     [self.commandDelegate runInBackground:^{
 
         CDVPluginResult *pluginResult;
+        NSLog(@"NativeCode initialization started.");
 
-        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+
+        @try {
+           [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        }
+        @catch (NSException *exception) {
+            NSLog(@"%@", exception.reason);
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"NativeCode.init()You have errors in native code"];
+        }
         NSLog(@"NativeCode.init() was successful done.");
 
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
