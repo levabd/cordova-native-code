@@ -10,7 +10,7 @@ module.exports = {
     consoleLog: function(message){
         exec(null, null, 'NativeCode', 'consoleLog', [ message ]);
     },
-    secondMethod: function(message){
-        exec(null, null, 'NativeCode', 'secondMethod', [ message ]);
+    init: function(){
+        exec(null, null, 'NativeCode', 'init', [ ]);
     }
 };
