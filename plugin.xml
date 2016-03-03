@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.native.code.wipon" version="0.1">
+        id="com.wipon.nativecode" version="0.1">
     <name>Native Code Wipon</name>
     <description>Cordova Plugin for access to native functions</description>
     <license>Wipon</license>
     <keywords>cordova</keywords>
     <js-module src="www/android/native_code.js" name="NativeCode">
-        <clobbers target="cordova.plugins.nativeCode" />
+        <clobbers target="cordova.plugins.nativeCode"/>
     </js-module>
 
     <platform name="android">
@@ -15,17 +15,17 @@
                 <param name="android-package" value="com.wipon.nativeCode.NativeCode"/>
             </feature>
         </config-file>
-        <source-file src="src/android/NativeCode.java" target-dir="src/com/native/code/wipon" />
+        <source-file src="src/android/NativeCode.java" target-dir="src/com/native/code/wipon"/>
     </platform>
 
-    <!--<platform name="ios">-->
-    <!--<config-file target="config.xml" parent="/*">-->
-    <!--<feature name="NativeCode">-->
-    <!--<param name="ios-package" value="CDVMarket"/>-->
-    <!--</feature>-->
-    <!--</config-file>-->
-    <!--<header-file src="src/ios/CDVMarket.h" />-->
-    <!--<source-file src="src/ios/CDVMarket.m" />-->
-    <!--</platform>-->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="NativeCode">
+                <param name="ios-package" value="NativeCode"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/NativeCode.h"/>
+        <source-file src="src/ios/NativeCode.m"/>
+    </platform>
 
 </plugin>
