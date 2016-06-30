@@ -24,16 +24,16 @@
             </feature>
         </config-file>
 
-        <resource-file src="src/android/res/drawable-hdpi/icon-notification.png" target="res/drawable-hdpi/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-hdpi-v11/icon-notification.png" target="res/drawable-hdpi-v11/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-mdpi/icon-notification.png" target="res/drawable-mdpi/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-mdpi-v11/icon-notification.png" target="res/drawable-mdpi-v11/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xhdpi/icon-notification.png" target="res/drawable-xhdpi/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xhdpi-v11/icon-notification.png" target="res/drawable-xhdpi-v11/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xxhdpi/icon-notification.png" target="res/drawable-xxhdpi/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xxhdpi-v11/icon-notification.png" target="res/drawable-xxhdpi-v11/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xxxhdpi/icon-notification.png" target="res/drawable-xxxhdpi/icon-notification.png" />
-        <resource-file src="src/android/res/drawable-xxxhdpi-v11/icon-notification.png" target="res/drawable-xxxhdpi-v11/icon-notification.png" />
+        <resource-file src="src/android/res/drawable-hdpi/iconNotification.png" target="res/drawable-hdpi/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-hdpi-v11/iconNotification.png" target="res/drawable-hdpi-v11/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-mdpi/iconNotification.png" target="res/drawable-mdpi/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-mdpi-v11/iconNotification.png" target="res/drawable-mdpi-v11/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xhdpi/iconNotification.png" target="res/drawable-xhdpi/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xhdpi-v11/iconNotification.png" target="res/drawable-xhdpi-v11/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xxhdpi/iconNotification.png" target="res/drawable-xxhdpi/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xxhdpi-v11/iconNotification.png" target="res/drawable-xxhdpi-v11/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xxxhdpi/iconNotification.png" target="res/drawable-xxxhdpi/iconNotification.png" />
+        <resource-file src="src/android/res/drawable-xxxhdpi-v11/iconNotification.png" target="res/drawable-xxxhdpi-v11/iconNotification.png" />
 
     </platform>
 
