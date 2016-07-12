@@ -13,10 +13,6 @@
 
         <source-file src="src/android/PermissionHelper.java" target-dir="src/com/wipon/nativeCode"/>
         <source-file src="src/android/NativeCode.java" target-dir="src/com/wipon/nativeCode"/>
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.READ_CONTACTS"/>
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-        </config-file>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="NativeCode">

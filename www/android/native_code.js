@@ -13,6 +13,9 @@ module.exports = {
     init: function(){
         exec(null, null, 'NativeCode', 'init', [ ]);
     },
+    hasPermission: function(permissions, callbackContext){
+        exec(callbackContext.success || null, callbackContext.error || null, 'NativeCode', 'hasPermission', permissions )
+    },
     requestPermission: function(permissions, callbackContext){
         exec(callbackContext.success || null, callbackContext.error || null, 'NativeCode', 'requestPermission', permissions )
     }

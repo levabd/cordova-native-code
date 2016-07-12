@@ -59,6 +59,37 @@ public class NativeCode extends CordovaPlugin{
                     return true;
                 }
             }
+            if (action.equals("hasPermission")) {
+                Log.d("CordovaLog", "Permission Request");
+                Log.d("CordovaLog", Integer.toString(args.length()));
+                callbackContextGlobal = callbackContext;
+                if (args.length() >= 1) {
+
+                    ArrayList<String> permissions = new ArrayList<String>();
+
+                    if (args != null) {
+                        int len = args.length();
+                        for (int i=0;i<len;i++){
+                            permissions.add(args.getString(i));  //get(i).toString()
+                        }
+                    }
+
+                    String[] perms = permissions.toArray(new String[permissions.size()]);
+                    //String[] permissions = args.toString().replace("},{", " ,").split(" ");
+
+                    for(int i = 0; i < perms.length; i++){
+                        Log.d("CordovaLog", "permission - " + perms[i]);
+                    }
+
+                    if (hasPermission(perms)) {
+                        callbackContextGlobal.success();
+                    }else{
+                        callbackContextGlobal.error("Permission denied");
+                    }
+
+                    return true;
+                }
+            }
         } catch (JSONException e) {
             Log.d("CordovaLog","Plugin NativeCode: cannot parse args.");
             e.printStackTrace();
