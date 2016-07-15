@@ -13,6 +13,12 @@ module.exports = {
     init: function(){
         exec(null, null, 'NativeCode', 'init', [ ]);
     },
+    iOsHasPermission: function(permissionName, callbackContext){
+        exec(callbackContext.success || null, callbackContext.error || null, 'NativeCode', 'iOsHasPermission', [ permissionName ] )
+    },
+    iOsPermission: function(permissionName, callbackContext){
+        exec(callbackContext.success || null, callbackContext.error || null, 'NativeCode', 'iOsPermission', [ permissionName ] )
+    },
     hasPermission: function(permissions, callbackContext){
         exec(callbackContext.success || null, callbackContext.error || null, 'NativeCode', 'hasPermission', permissions )
     },
