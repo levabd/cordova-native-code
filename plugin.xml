@@ -20,12 +20,6 @@
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-            <uses-permission android:name="android.permission.CAMERA" />
-        </config-file>
-
         <resource-file src="src/android/res/drawable-hdpi/icon_notification.png" target="res/drawable-hdpi/icon_notification.png" />
         <resource-file src="src/android/res/drawable-hdpi-v11/icon_notification.png" target="res/drawable-hdpi-v11/icon_notification.png" />
         <resource-file src="src/android/res/drawable-mdpi/icon_notification.png" target="res/drawable-mdpi/icon_notification.png" />
