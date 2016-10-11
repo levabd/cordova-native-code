@@ -14,7 +14,6 @@ import com.wipon.nativeCode.PermissionHelper;
 import android.util.Log;
 import android.content.pm.PackageManager;
 
-
 public class NativeCode extends CordovaPlugin{
 
     public static final int START_REQ_CODE = 123;
