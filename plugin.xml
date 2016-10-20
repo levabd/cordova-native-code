@@ -13,6 +13,8 @@
 
         <source-file src="src/android/PermissionHelper.java" target-dir="src/com/wipon/nativeCode"/>
         <source-file src="src/android/NativeCode.java" target-dir="src/com/wipon/nativeCode"/>
+        <source-file src="src/android/MyApplication.java" target-dir="src/com/wipon/nativeCode"/>
+        <source-file src="src/android/libs/acra-4.9.0.jar" target-dir="libs" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="NativeCode">

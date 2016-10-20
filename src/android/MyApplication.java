@@ -1,4 +1,4 @@
-package com.wipon.wipon;
+package com.wipon.nativeCode;
 
 import android.app.Application;
 import org.acra.*;
