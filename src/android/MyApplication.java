@@ -6,7 +6,7 @@ import org.acra.annotation.*;
 import android.util.Log;
 import android.content.pm.PackageManager;
 
-@ReportsCrashes(formUri = "https://wipon.net:8183/v3/crash-report",
+@ReportsCrashes(formUri = "http://wipon.net:5000",
         httpMethod = org.acra.sender.HttpSender.Method.POST,
         mode = ReportingInteractionMode.TOAST,
         reportType = org.acra.sender.HttpSender.Type.JSON)
